@@ -38,6 +38,16 @@ body {
   width: 200px;
 }
 
+.title {
+  background-color: #00000082;
+  border-radius: 30px;
+  padding: 1px 10px;
+}
+
+.mb{
+  margin: 0 0 15px 0;
+}
+
 .button {
     display: block;
     width: 115px;
