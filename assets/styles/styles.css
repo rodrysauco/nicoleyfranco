@@ -5,7 +5,7 @@ body {
   font-style: italic;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #c6cdb9;
   color: #333;
   text-align: center;
 }
@@ -20,7 +20,8 @@ body {
   width: 100%;
   z-index: 10;
   justify-content: center;
-  background-color: white;
+  background-color: #eceee8;
+  color: #405715;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -39,7 +40,15 @@ body {
 }
 
 .title {
-  background-color: #00000082;
+  color: #405715;
+}
+
+.description {
+  color: #667944;
+}
+
+.title-img {
+  background-color: #405715cc;
   border-radius: 30px;
   padding: 1px 10px;
 }
@@ -52,7 +61,7 @@ body {
     display: block;
     width: 115px;
     height: 25px;
-    background: #4E9CAF;
+    background: #405715;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
@@ -78,9 +87,10 @@ body {
 /* Sección de Encabezado/Novios */
 .hero {
   position: relative;
+  border-radius: 8px;
   width: 100%;
   overflow: hidden;
-  background-color: #eee; /* Color de fondo si la imagen no carga */
+  background-color: #eceee8; /* Color de fondo si la imagen no carga */
 }
 .hero img {
   width: 100%;
@@ -109,25 +119,25 @@ body {
 /* Sección de Información */
 .info-section {
   padding: 40px;
-  background-color: #fff;
+  background-color: #eceee8;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .info-section h2 {
-  color: #666;
+  color: #405715;
   margin-bottom: 20px;
 }
 /* Sección del Mapa */
 .map-section {
   padding: 40px 0;
-  background-color: #f0f0f0;
+  background-color: #eceee8;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .map-section h2 {
-  color: #666;
+  color: #405715;
   margin-bottom: 20px;
 }
 .map-container {
@@ -150,7 +160,7 @@ body {
 footer {
   margin-top: 40px;
   padding: 20px;
-  background-color: #333;
+  background-color: #405715;
   color: white;
   font-size: 0.9em;
   border-radius: 8px;
