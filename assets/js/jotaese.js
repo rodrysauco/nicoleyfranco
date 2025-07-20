@@ -29,9 +29,23 @@ const timer = setInterval(() => {
 }, 1000);
 
 const params = new URLSearchParams(window.location.search);
-const nombre = params.get("nombre");
+const nombre = params.get("nombre") || "";
 
-document.getElementById("mensaje-invitado").textContent = `¿${nombre} venis?`;
+const nombreLower = nombre.toLowerCase();
+
+// Variable para el mensaje personalizado
+let mensaje = "";
+
+if (nombreLower.includes("familia") || nombreLower.includes("flia")) {
+  mensaje = `${nombre} los esperamos!`;
+} else {
+  mensaje = `${nombre} te esperamos!`;
+}
+
+document.getElementById("mensaje-invitado").textContent = mensaje;
+if (!nombre) {
+  document.getElementById("confirmar").style.display = 'none';
+}
 
 const formURL = `https://docs.google.com/forms/d/e/1FAIpQLSexu-MnsBi1IpPapimaUHc89SV_4XnXUAS8XNhWhoxEJDK2tA/viewform?usp=pp_url&entry.1044132097=${encodeURIComponent(
   nombre
