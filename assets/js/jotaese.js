@@ -36,10 +36,10 @@ const nombreLower = nombre.toLowerCase();
 // Variable para el mensaje personalizado
 let mensaje = "";
 
-if (nombreLower.includes("familia") || nombreLower.includes("flia")) {
-  mensaje = `${nombre} los esperamos!`;
+if (nombreLower.includes("familia") || nombreLower.includes("flia") || nombreLower.includes('y')) {
+  mensaje = `¡${nombre} los esperamos!`;
 } else {
-  mensaje = `${nombre} te esperamos!`;
+  mensaje = `¡${nombre} te esperamos!`;
 }
 
 document.getElementById("mensaje-invitado").textContent = mensaje;
